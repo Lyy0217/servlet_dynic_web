@@ -14,3 +14,4 @@
   END hello Lyy
   </body>
 </html>
+<jsp:forward page="hello.jsp"/>
