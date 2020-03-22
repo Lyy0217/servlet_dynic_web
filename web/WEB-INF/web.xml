@@ -4,6 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+    <!--  配置的servlet  -->
     <servlet>
         <servlet-name>HelloServlet</servlet-name>
         <servlet-class>HelloServlet</servlet-class>
@@ -63,4 +64,51 @@
         <servlet-name>HeroUpdateServlet</servlet-name>
         <url-pattern>/updateHero</url-pattern>
     </servlet-mapping>
+
+    <!--  配置的filter  -->
+    <!--    <filter>-->
+    <!--        <filter-name>FirstFilter</filter-name>-->
+    <!--        <filter-class>filter.FirstFilter</filter-class>-->
+    <!--    </filter>-->
+
+    <!--    <filter-mapping>-->
+    <!--        <filter-name>FirstFilter</filter-name>-->
+    <!--        <url-pattern>/*</url-pattern>-->
+    <!--    </filter-mapping>-->
+
+    <!--    <filter>-->
+    <!--        <filter-name>AuthFilter</filter-name>-->
+    <!--        <filter-class>filter.AuthFilter</filter-class>-->
+    <!--    </filter>-->
+
+    <!--    <filter-mapping>-->
+    <!--        <filter-name>AuthFilter</filter-name>-->
+    <!--        <url-pattern>/*</url-pattern>-->
+    <!--    </filter-mapping>-->
+
+    <!--  配置的listner  -->
+    <listener>
+        <listener-class>listner.ContextListner</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>listner.ContextAttributeListner</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>listner.SessionListene</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>listner.SessionAttributeListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>listner.RequestListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>listner.OnlineNumberListener</listener-class>
+    </listener>
+
 </web-app>
